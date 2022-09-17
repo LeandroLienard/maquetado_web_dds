@@ -6,13 +6,16 @@
     --roman-silver: #7c8595ff;
 }
 
+html {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth; /* transicion  entre hipervinculos*/
+}
+
 .link-circle {
     color: rgb(13, 66, 172);
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
-
 
 .link-circle:hover {
     cursor: pointer;
