@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC - DREAM TEAM 😎</title>
+    <link rel="icon" type="image/png" href="../resources/hc.png"/>
+    <link rel="stylesheet" href="../styles/navbar-base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script> 
+  $(function(){
+    $("#header").load("../shared/us-header.html");
+    $("#footer").load("../shared/footer.html");
+  });
+  </script>
+  </head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- User Navbar -->
+  <div id="header"></div>
+
+  <div class = "container">
+
+    <form class="needs-validation" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip01">Nombre</label>
+          <input type="text" class="form-control" id="validationTooltip01" placeholder="Introduzca su nombre..." value="Mark" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltip02">Apellido</label>
+          <input type="text" class="form-control" id="validationTooltip02" placeholder="Introduzca su apellido..." value="Otto" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationTooltipUsername">Usuario</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Introduzca su usuario..." aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid username.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationTooltip03">Provincia</label>
+          <input type="text" class="form-control" id="validationTooltip03" placeholder="Introduzca su provincia..." required>
+          <div class="invalid-tooltip">
+            Porfavor escriba una provincia valida.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip04">Ciudad</label>
+          <input type="text" class="form-control" id="validationTooltip04" placeholder="Introduzca su ciudad..." required>
+          <div class="invalid-tooltip">
+            Porfavor escriba una ciudad valida.
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationTooltip05">Zip</label>
+          <input type="text" class="form-control" id="validationTooltip05" placeholder="Introduzca su codigo zip" required>
+          <div class="invalid-tooltip">
+            Porfavor escriba un codigo valido.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Registrarse</button>
+      <br><br>
+    </form>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+   </div>
+    
+
+  <!-- Footer -->
+  <div id="footer" class="mt-auto"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
