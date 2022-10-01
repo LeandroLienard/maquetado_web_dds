@@ -45,3 +45,12 @@ html {
 
     padding-block: 2%;
 }
+
+.solicitud{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+    justify-content: center;
+    align-items: center;
+} 
