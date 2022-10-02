@@ -17,11 +17,72 @@
   $(function(){
     $("#header").load("../shared/admin-header.html");
     $("#footer").load("../shared/footer.html");
+    $("#direccion").load("../shared/direccion.html");
   });
   </script>
   </head>
 <body class = "d-flex flex-column min-vh-100">
-  <div id = "header"></div>
+  <div id = "header"></div>  
+  <section class="form-section container">
+    <form action="alta-org.html" method="POST">
+    <div class="form d-flex flex-column">
+      <h1 style="margin-top: 20px">Dar Alta Organización</h1>
+      <div class="mb-3">
+        <div style="width:100%; display: inline-block;">
+          <a>Nombre</a>
+          <input type="text" class="form-control" name="nombre" maxlength="200" placeholder="">
+        </div>
+        <div style="width:100%; display: inline-block;">
+          <a>Razón Social</a>
+           <input type="text" class="form-control"name="razon-social" maxlength="200" placeholder="SELECT o INPUT?????" >
+        </div> 
+        <div>
+          <div style="width:48%; display: inline-block;">
+            <a>Tipo de Organización</a>
+            <select class="form-control" id="tipo-org" name="tipo-org">
+              <option value="0">SELECCIONE</option>
+              <option value="1">Gubernamental</option>
+              <option value="2">ONG</option>
+              <option value="3">Empresa</option>
+              <option value="4">Institución</option>                
+    
+            </select>
+          </div>        
+          <div style="width:48%; display: inline-block; margin-left: 3%;">
+            <a>Clasificación de la Organización</a>
+            <select class="form-control" id="clasificacion-org" name="clasificacion-org">
+              <option value="0">SELECCIONE</option>
+              <option value="1">Ministerio</option>
+              <option value="2">Universidad</option>
+              <option value="3">Escuela</option>
+              <option value="4">Empresa del Sector primario</option>
+              <option value="5">Empresa del Sector secuandario</option>
+              <option value="6">Otros??</option>
+            </select>
+          </div>
+        </div>
+      </div>      
+      <div id="direccion"></div>
+      
+      
+      
+      
+    </div>
+
+    </form>
+    <figure class="form-section-img">
+      <img src="../resources/undraw_car_in_route.svg" class="form-section-picture" alt="girl_ride_bike">
+    </figure>
+
+
+
+
+
+
+
+  </section>
+  
+
 
   <!-- Footer -->
   <div class="mt-auto" id="footer"></div>
